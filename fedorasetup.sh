@@ -20,4 +20,7 @@ sudo dnf install code
 flatpak install flathub com.transmissionbt.Transmission && flatpak install flathub us.zoom.Zoom
 #
 # ~~~~~~~~~ This section will set default shell to 'fish'
-sudo which fish > fis_var=
+#~~~~~~~~~~~~~~~~ Needs to be changed, not working as expected
+fish_Var="$(which fish)"
+chsh $fish_var
+
